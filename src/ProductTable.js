@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./App.css"
 
 const ProductTable = (props) => {
   return (
@@ -16,7 +17,7 @@ const ProductTable = (props) => {
         <tbody>
           {props.prod.map((el , i) => (
             <tr key={i}>
-              <td>{el.name}</td>
+              <td className={el.name === "TV" && "blue"} >{el.name}</td>
               <td>{el.price}</td>
               <td>{el.category}</td>
             </tr>
