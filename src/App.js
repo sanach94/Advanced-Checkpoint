@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+const App=()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <Productable prod={products}/>
     </div>
   );
 }
+// const Productable=props=> {
+//   return (
+//     <div >
+//   <p> my products: {props.children} </p>
+//     </div>
+//   );
+// }
+// const App=()=> {
+//   return (
+//     <div className="App">
+//    <Productable> prod={products} </Productable>
+//     </div>
+//   );
+// }
 
 export default App;
