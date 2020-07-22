@@ -4,7 +4,7 @@ import './index.css';
 import ProductTable from './ProductTable';
 import * as serviceWorker from './serviceWorker';
 
-const products = [{category: 'Electronics',price: '200',name: 'TV'} , {category: 'Clothes',price: '30',name: 'T-shirt'}];
+const products = [{category: 'Electronics',price: 200,name: 'TV'} , {category: 'Clothes',price: 30,name: 'T-shirt'}];
 
 ReactDOM.render(
   <React.StrictMode>
